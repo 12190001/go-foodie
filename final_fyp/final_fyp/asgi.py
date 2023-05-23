@@ -14,7 +14,7 @@ from channels.routing import ProtocolTypeRouter, URLRouter
 from django.urls import path
 from food.routing import websocket_urlpatterns
 from channels.auth import AuthMiddleware, AuthMiddlewareStack
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'final_fyp.final_fyp.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'final_fyp.settings')
 
 application = ProtocolTypeRouter({
     'https': get_asgi_application(),
