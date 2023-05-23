@@ -9,7 +9,7 @@ import random
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string, get_template
 from django.contrib.auth import authenticate,login,logout
-from bson import ObjectId
+# from bson import ObjectId
 from django.views.decorators.cache import never_cache
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password
