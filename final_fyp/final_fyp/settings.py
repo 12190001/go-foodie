@@ -14,11 +14,6 @@ from pathlib import Path
 import os
 from django.contrib.messages import constants as message_constants
 
-import pytesseract
-
-pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract' # replace with the actual path to your Tesseract-OCR executable
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = Path(BASE_DIR, 'templates')
@@ -82,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'final_fyp.wsgi.application'
+WSGI_APPLICATION = 'final_fyp.wsgi.application'
 ASGI_APPLICATION = 'final_fyp.asgi.application'
 
 CHANNEL_LAYERS = {
