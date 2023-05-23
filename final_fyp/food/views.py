@@ -13,7 +13,7 @@ from django.contrib.auth import authenticate,login,logout
 from django.views.decorators.cache import never_cache
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password
-import cv2
+# import cv2
 from django.core.files.storage import FileSystemStorage
 import os
 from datetime import datetime
